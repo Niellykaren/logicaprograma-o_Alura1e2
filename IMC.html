@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Calculando IMC</title>
+</head>
+<body>
+	<h2>aula 5</h2>
+	<script>
+		function puloLinha() {
+		document.write("<br>")
+		}
+	function mostra(frase) {
+		document.write(frase);
+		puloLinha()
+		}
+	function calculaImc(altura, peso) {
+		var imc = peso / (altura * altura);
+		return imc;
+	}
+
+	var imcNielly = calculaImc(1.68, 65)
+	var imcMallaro = calculaImc(1.70,55)
+
+	mostra ("O IMC é " + imcNielly)
+	</script>
+	
+<p>Classificação Normal é entre 18,5 e 24,9.</p>
+	<p>Obesidade grau 0</p>
+</body>
+</html>
