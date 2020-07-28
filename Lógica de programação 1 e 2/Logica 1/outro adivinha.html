@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>estrelas</title>
+</head>
+<body>
+	<h2>aula 8</h2>
+
+	<input/>
+	<button>Qual meu número da sorte</button>
+	<script>
+			function pulaLinha() {
+
+		document.write("<br>");
+		}
+
+		function mostra(frase){
+
+		document.write(frase);
+		pulaLinha();
+		}
+		var segredo = 13;
+		var input = document.querySelector('input');
+		input.focus()
+		function verifica (){
+			
+		if(input.value == segredo){
+			alert("Você acertou!")
+		}else{
+			alert('Você errrrrrou!')
+		} 
+		input.value = "";
+		input.focus();
+
+		}
+		var button = document.querySelector('button')
+		button.onclick = verifica
+
+
+		
+	</script>
+	
+
+</body>
+</html>
